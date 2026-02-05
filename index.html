@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanxi Xinglong Casting Co., Ltd | Professional Casting Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Base Styling */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; overflow-x: hidden; }
+
+        /* Navigation */
+        header { background: #0b1a2a; color: white; padding: 1.2rem 8%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; border-bottom: 3px solid #f39c12; }
+        .logo { font-size: 1.1rem; font-weight: bold; text-transform: uppercase; }
+        .logo span { color: #f39c12; }
+        nav a { color: white; text-decoration: none; margin-left: 20px; font-size: 0.9rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover { color: #f39c12; }
+
+        /* Switchable Sections */
+        section { display: none; min-height: 85vh; }
+        #home { display: block; }
+
+        /* HERO SECTION - NEW STABLE MOLTEN STEEL IMAGE */
+        .hero { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('hero.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    height: 85vh;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+            color: white; 
+            text-align: center;
+            padding: 0 10%;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; text-shadow: 3px 3px 10px rgba(0,0,0,0.8); }
+        .hero p { font-size: 1.3rem; max-width: 800px; margin-bottom: 2rem; text-shadow: 2px 2px 5px rgba(0,0,0,0.8); }
+
+        .btn { padding: 15px 40px; background: #f39c12; color: white; text-decoration: none; font-weight: bold; border-radius: 4px; transition: 0.3s; border: none; cursor: pointer; }
+        .btn:hover { background: #e67e22; transform: translateY(-3px); }
+
+        /* Content Pages Styling */
+        .content-padding { padding: 80px 10%; }
+        .section-title { font-size: 2.5rem; color: #0b1a2a; margin-bottom: 30px; border-left: 8px solid #f39c12; padding-left: 20px; }
+
+        /* About & Products UI */
+        .about-box { display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+        .about-text { flex: 1; min-width: 300px; font-size: 1.1rem; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .product-card { border: 1px solid #eee; border-radius: 8px; overflow: hidden; text-align: center; padding: 30px; background: #fdfdfd; }
+        .product-card i { color: #f39c12; margin-bottom: 20px; }
+
+        /* Contact UI */
+        .contact-info { background: #0b1a2a; color: white; padding: 40px; border-radius: 10px; margin-top: 20px; }
+        .contact-item { margin-bottom: 20px; display: flex; align-items: flex-start; }
+        .contact-item i { color: #f39c12; margin-right: 15px; font-size: 1.2rem; margin-top: 5px; }
+
+        footer { background: #050b14; color: #7f8c8d; padding: 30px; text-align: center; border-top: 1px solid #1a2a3a; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">SHANXI <span>XINGLONG</span> CASTING CO., LTD.</div>
+        <nav>
+            <a href="#" onclick="showPage('home')">Home</a>
+            <a href="#" onclick="showPage('about')">About Us</a>
+            <a href="#" onclick="showPage('products')">Products</a>
+            <a href="#" onclick="showPage('contact')">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Expertise in Molten Precision</h1>
+            <p>Shanxi Xinglong Casting provides high-durability iron parts, manhole covers, and vehicle components for the global industrial market.</p>
+            <button class="btn" onclick="showPage('products')">View Our Products</button>
+        </div>
+    </section>
+
+    <section id="about" class="content-padding">
+        <h2 class="section-title">About Our Company</h2>
+        <div class="about-box">
+            <div class="about-text" style="flex: 1.2; min-width: 350px;">
+                <h3>Our Heritage & Growth</h3>
+                <p><strong>Shanxi Xinglong Casting Co., Ltd</strong> is a private enterprise established in <strong>June 1994</strong>. Located in the Yintong Industrial Estate, Xiajiaying Town, Jiaocheng County, Shanxi Province, we have evolved over twenty years into a leader in the industry.</p>
+                <p>We have successfully integrated a streamlined production chain encompassing <strong>smelting, casting, and precision machining processes</strong>.</p>
+                
+                <h3 style="margin-top:25px;">Production Capacity</h3>
+                <p>Our facility currently features:</p>
+                <ul style="margin-left: 20px; color: #555; margin-bottom: 15px; list-style-type: square;">
+                    <li>One <strong>6,000 m²</strong> manual casting workshop.</li>
+                    <li>Two mechanical molding lines.</li>
+                    <li>One <strong>fully automatic static pressure molding line</strong>.</li>
+                    <li>Two 158 m² smelting furnaces.</li>
+                </ul>
+                <p>These capabilities enable us to produce <strong>120,000 tons</strong> of excellent casting products and <strong>300,000 tons</strong> of pig iron per year.</p>
+
+                <h3 style="margin-top:25px;">Certifications & Quality</h3>
+                <p>Driven by leading technology and advanced management, we received <strong>ISO9001:2000</strong> certification and the <strong>Kitemark license</strong> issued by BSI in 2001, followed by the <strong>SGS</strong> product license in 2006. Today, we offer more than 400 certified products to the global market.</p>
+            </div>
+
+            <div style="flex: 0.8; min-width: 300px; display: flex; flex-direction: column; gap: 20px;">
+                <div style="text-align: center;">
+                    <img src="factory_1.jpg" alt="Xinglong Factory Exterior" style="width:100%; border-radius:10px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 1px solid #ddd;">
+                    <p style="font-size: 0.8rem; color: #7f8c8d; margin-top: 5px;">Factory Exterior & Infrastructure</p>
+                </div>
+
+                <div style="text-align: center;">
+                    <img src="factory_2.jpg" alt="Automatic Molding Line" style="width:100%; border-radius:10px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 1px solid #ddd;">
+                    <p style="font-size: 0.8rem; color: #7f8c8d; margin-top: 5px;">Advanced Automatic Molding Line</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
+                    <div style="background: #0b1a2a; color: #f39c12; padding: 10px; border-radius: 6px; text-align: center;">
+                        <span style="font-weight: bold; display: block;">1994</span>
+                        <span style="font-size: 0.6rem; color: #fff;">ESTABLISHED</span>
+                    </div>
+                    <div style="background: #f39c12; color: #fff; padding: 10px; border-radius: 6px; text-align: center;">
+                        <span style="font-weight: bold; display: block;">120K</span>
+                        <span style="font-size: 0.6rem; color: #0b1a2a;">ANNUAL TONS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="content-padding">
+        <h2 class="section-title">Main Products</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div style="height: 250px; overflow: hidden;">
+                    <img src="product_1.jpg" alt="Ductile Iron Manhole Covers" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3 style="color: #f39c12;">Ductile Iron Manhole Covers</h3>
+                    <p>High-strength, anti-theft, and corrosion-resistant infrastructure solutions. We offer various load classes according to EN124 standards.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div style="height: 250px; overflow: hidden;">
+                    <img src="product_2.jpg" alt="Vehicle Parts" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3 style="color: #f39c12;">Vehicle Parts</h3>
+                    <p>Precision-cast chassis components, brake hubs, and engine supports designed for high-performance and heavy-duty vehicles.</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div style="height: 250px; overflow: hidden;">
+                    <img src="product_3.jpg" alt="Casting Parts" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3 style="color: #f39c12;">Casting Parts</h3>
+                    <p>Custom industrial casting solutions for pumps, valves, and machinery components, produced with precision machining and superior finishing.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 50px; text-align: center; background: #f4f7f6; padding: 20px; border-radius: 8px;">
+            <p style="color: #0b1a2a; font-weight: bold;">Looking for custom specifications? <a href="javascript:void(0)" onclick="showPage('contact')" style="color: #f39c12; text-decoration: none;">Contact our engineering team today.</a></p>
+        </div>
+    </section>
+    <section id="contact" class="content-padding">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><p>Yintong Industrial Estate, Xiajiaying Town, Jiaocheng County, Shanxi, China</p></div>
+            <div class="contact-item"><i class="fas fa-user"></i><p>Contact Person: Mr. Yan</p></div>
+            <div class="contact-item"><i class="fas fa-phone"></i><p>Tel: +86 358 3901202, 3901203</p></div>
+            <div class="contact-item"><i class="fas fa-envelope"></i><p>info@xinglong-casting.cn / yan@xinglong-casting.cn</p></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>SHANXI XINGLONG CASTING CO., LTD. &copy; 2026. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('section').forEach(s => s.style.display = 'none');
+            document.getElementById(pageId).style.display = 'block';
+            window.scrollTo(0,0);
+            return false;
+        }
+    </script>
+</body>
+</html>
